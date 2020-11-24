@@ -1,5 +1,5 @@
 # CVPR2021 - Paper ID 7123
-Estimating A Child's Growth Potential From Cephalometric X-Ray Image via Morphology-Aware Interactive Keypoint Estimation
+Pytorch implemetnation of **Estimating A Child's Growth Potential From Cephalometric X-Ray Image via Morphology-Aware Interactive Keypoint Estimation**.
 
 ## Prerequisites
 Install dependencies using the `requirements.txt` file.
