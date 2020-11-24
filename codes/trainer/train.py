@@ -23,7 +23,7 @@ def train(config, model, train_loader, val_loader, criterion, optimizer,writer=N
         # tensorboard
         if writer:
             writer.write_epoch(train_results, val_results, epoch)
-            # TODO: tensorboard 이미지 출력
+            
 
         sentence = 'Epoch {} - {}'.format(epoch, val_results)
         util.log(config, sentence=sentence)
