@@ -5,9 +5,10 @@ Pytorch implemetnation of **Estimating A Child's Growth Potential From Cephalome
 Our supplementary video is provided in `supplementary_vedio.zip` file.
 
 ## Prerequisites
-Install dependencies using the `requirements.txt` file.
+Install dependencies using the `environment.yaml` file.
 ```
-conda install --file requirements.txt
+conda env create --file environment.yaml
+conda activate keypoint
 ```
 
 ## Dataset
