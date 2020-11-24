@@ -228,7 +228,7 @@ def assert_config(config):
     elif not os.path.exists(config.PATH.RUN.SAVE):
         make_save_dir(config)
 
-    # train / val / test 비율 sum = 1 (preprocess 할때만 쓰임)
+    
     if config.train_val_test_split is not None:
         assert np.sum(config.train_val_test_split) == 1
     return
