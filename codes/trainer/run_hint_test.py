@@ -125,8 +125,8 @@ def iter_epoch(config, model, grad, criterion, loader, optimizer=None, writer=No
                     output_bbox_matrix[num_hint] = np.array([-1,-1,-1,-1])
                 else:
                     output_bbox_matrix[num_hint] = out['bbox'][0].data.cpu().numpy()
-                hint_matrix[num_hint] = batch['hint_mask'].squeeze().data.cpu().numpy() # mask 형태
-                hint_index_0to13[num_hint] = np.array(hint_indices).astype(int) # index 형태
+                hint_matrix[num_hint] = batch['hint_mask'].squeeze().data.cpu().numpy()
+                hint_index_0to13[num_hint] = np.array(hint_indices).astype(int)
                 output_keypoint_mm = pixel2mm(config, copy.deepcopy(output_keypoint), batch['pspace'])
                 mae_mm_keypoint_13by2 = (nn.L1Loss(reduction='none')(output_keypoint_mm, label_keypoint_mm)[0]).data.cpu().numpy() # (13,2)
                 mae_mm_keypoint_13_numpy = mae_mm_keypoint_13by2.mean(-1)
