@@ -133,7 +133,7 @@ def collate_fn(batch):
         'hints':batch_4,
         'opts_gt': torch.stack(batch[5]),
         'pspace': torch.stack(batch[6]),
-        'hint_indices': batch_7, # 길이가 다 달라서, list로 그냥 넣어줌
+        'hint_indices': batch_7,
         'points_coord_gt': torch.stack(batch[8]),
         'hint_mask': batch_9
     }
