@@ -155,4 +155,3 @@ dependencies:
     - werkzeug==1.0.1
     - widgetsnbextension==3.5.1
     - yacs==0.1.8
-prefix: /home/nas1_userD/taesung/anaconda3/envs/keypoint
